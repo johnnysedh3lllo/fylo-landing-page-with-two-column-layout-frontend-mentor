@@ -1,0 +1,407 @@
+/* Variables */
+
+:root {
+  /* COLORS */
+  --clr-primary-100: hsl(243, 87%, 12%);
+  --clr-primary-200: hsl(238, 22%, 44%);
+
+  --clr-accent-100: hsl(224, 93%, 58%);
+  --clr-accent-200: hsl(170, 45%, 43%);
+
+  --clr-neutral-100: hsl(240, 75%, 98%);
+  --clr-neutral-200: hsl(0, 0%, 75%);
+
+  /* FONT FAMILY */
+  --ff-primary: "Open Sans", sans-serif;
+  --ff-secondary: "Raleway", sans-serif;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* UTILITY CLASSES */
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.clr-primary-100 {
+  color: var(--clr-primary-100);
+}
+
+.clr-primary-200 {
+  color: var(--clr-primary-200);
+}
+
+.font-clr-neutral {
+  color: var(--clr-neutral-100);
+}
+
+.link-clr {
+  color: var(--clr-accent-200);
+}
+
+.ff-primary {
+  font-family: var(--ff-primary);
+}
+
+.ff-secondary {
+  font-family: var(--ff-secondary);
+}
+
+/* GENERAL STYLES */
+body {
+  padding: 1em 0 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  justify-content: center;
+  gap: 0.5em;
+}
+
+form {
+  flex-direction: column;
+  gap: 1em;
+}
+
+input,
+button {
+  padding: 0.5em 1.5em;
+  border-radius: 4px;
+}
+
+input {
+  border: 1px var(--clr-primary-100) solid;
+}
+
+button {
+  border: 0;
+  background-color: var(--clr-accent-100);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 1px 1px 7px 1px hsla(0, 0%, 0%, 0.2);
+}
+
+/* NAVIGATION */
+.nav-bar .container {
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  width: min(30%, 6em);
+  align-self: center;
+}
+
+.nav-list {
+  gap: 2em;
+}
+
+/* FEATURE SECTION */
+main {
+  flex-direction: column;
+  gap: 4em;
+  justify-content: space-between;
+}
+
+.first-feature .container {
+  flex-direction: column-reverse;
+  padding: 3em 0 3em;
+}
+
+.feature-context {
+  flex-direction: column;
+  gap: 2em;
+}
+
+.image-wrapper {
+  padding: 3em 2em;
+}
+
+.second-feature {
+  background: url(bg-curve-mobile.svg) no-repeat top;
+  background-size: cover;
+}
+
+.second-feature .container {
+  flex-direction: column-reverse;
+  width: 90%;
+  padding: 3em 0 3em;
+}
+
+.testimonial {
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.5em 2em;
+  background-color: #fff;
+  box-shadow: 1px 1px 7px 1px hsla(0, 0%, 0%, 0.2);
+  border-radius: 5px;
+}
+
+.avatar-details {
+  align-items: center;
+  gap: 1em;
+  font-size: 0.7rem;
+}
+
+.avatar {
+  border-radius: 100%;
+  width: 25px;
+}
+
+/* CALL TO ACTION SECTION */
+.cta {
+  background-color: var(--clr-primary-200);
+  padding: 4em 2em;
+}
+
+.cta > .flex {
+  flex-direction: column;
+  gap: 2em;
+}
+
+.cta-heading {
+  padding-bottom: 0.5em;
+}
+
+.cta-form > input {
+  padding: 0.5em 0.7em;
+  border: 0;
+}
+
+/* FOOTER SECTION */
+.logo-white {
+  padding-bottom: 2em;
+}
+
+.page-footer {
+  background-color: var(--clr-primary-100);
+}
+
+.page-footer .container {
+  padding: 3em 0 2em;
+}
+
+.contact-container {
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.phone,
+.email {
+  gap: 1.5em;
+}
+
+.icon-wrapper {
+  align-self: center;
+  gap: 1em;
+}
+
+.icons {
+  border: 1px solid white;
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HOVER STATES */
+a:hover {
+  filter: brightness(1.2);
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+.contact > li:hover {
+  color: var(--clr-accent-100);
+}
+
+.icons:hover{
+  border-color: var(--clr-accent-100);
+  color: var(--clr-accent-100);
+}
+
+@media (min-width: 769px) {
+  a {
+    justify-content: left;
+  }
+
+  .logo-wrapper {
+    width: min(30%, 10em);
+    align-self: center;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1000px;
+  }
+
+  .first-feature .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .second-feature {
+    background: url(bg-curve-desktop.svg) no-repeat top;
+    background-size: cover;
+  }
+
+  .header-form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header-form input {
+    width: 60%;
+  }
+
+  .header-form button {
+    width: 40%;
+  }
+
+  .second-feature .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .text-align {
+    text-align: left;
+  }
+
+  .container.article {
+    margin: 0;
+    width: 70%;
+  }
+
+  .cta {
+    padding: 4em 0;
+  }
+
+  .cta > .flex {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .wrapper {
+    width: 50%;
+  }
+
+  .cta-form {
+    width: 50%;
+  }
+  .cta-button {
+    width: 40%;
+  }
+
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact.flex {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .icon-wrapper {
+    flex-direction: row;
+    align-self: flex-start;
+  }
+}

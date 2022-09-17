@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME SCRIPT -->
+    <script
+      src="https://kit.fontawesome.com/9c33766163.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION SECTION -->
+    <nav class="nav-bar clr-primary-100 ff-secondary">
+      <div class="container flex">
+        <div class="logo-wrapper">
+          <img class="nav-logo" src="logo.svg" alt="" />
+        </div>
+
+        <ul class="nav-list flex">
+          <li>Features</li>
+          <li>Team</li>
+          <li>Sign In</li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- FEATURE SECTION -->
+    <main class="flex">
+      <header class="first-feature">
+        <div class="container flex">
+          <div class="feature-context flex">
+            <h1 class="text-align clr-primary-100 ff-secondary">
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            <p class="text-align clr-primary-100 ff-primary">
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+            <form class="flex header-form" action="">
+              <input
+                class="ff-secondary"
+                type="email"
+                placeholder="Enter your email..."
+                name=""
+                id=""
+              />
+              <button class="btn ff-secondary">Get Started</button>
+            </form>
+          </div>
+          <div class="image-wrapper">
+            <img src="illustration-1.svg" alt="" />
+          </div>
+        </div>
+      </header>
+
+      <section class="second-feature">
+        <div class="container flex">
+          <div class="feature-context flex">
+            <h2 class="text-align clr-primary-100 ff-secondary">Stay productive, wherever you are</h2>
+            <p class="clr-primary-200 ff-primary">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+              <br /><br />
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+            <a class="link-clr flex ff-primary" href=""
+              >See how Fylo works <div><img src="icon-arrow.svg" alt=""></div></a
+            >
+
+            <div class="container article">
+              <article class="testimonial flex clr-primary-100 ff-primary">
+              <div><img src="icon-quotes.svg" alt=""></div>
+                <p>
+                  Fylo has improved our team productivity by an order of
+                  magnitude. Since making the switch our team has become a
+                  well-oiled collaboration machine.
+                </p>
+                <div class="avatar-details flex">
+                  <div class="avatar-wrapper">
+                    <img class="avatar" src="avatar-testimonial.jpg" alt="" />
+                  </div>
+                  <div class="details-wrapper">
+                    <h3 class="ff-secondary">Kyle Burton</h3>
+                    <p>Founder & CEO, Huddle</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="image-wrapper">
+            <img src="illustration-2.svg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- CALL-TO-ACTION SECTION -->
+    <section class="cta font-clr-neutral">
+      <div class="container flex">
+        <div class="wrapper text-align">
+          <h2 class="cta-heading ff-secondary">Get early access today</h2>
+          <p class="cta-paragraph ff-primary">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <form class="flex cta-form" action="">
+          <input class="ff-secondary" type="email" placeholder="email@example.com" name="" id="" />
+          <button class="btn cta-button ff-secondary">Get Started For Free</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="page-footer font-clr-neutral">
+      <div class="container">
+        <img class="logo-white" src="logo-white.svg" alt="" />
+
+        <div class="contact-container flex ff-primary">
+          <ul class="contact">
+            <li class="phone flex">
+              <div><img class="contact-icon" src="icon-phone.svg" alt=""></div>
+              Phone: +1-543-123-4567</li>
+            <li class="email flex">
+             <div><img class="contact-icon" src="icon-email.svg" alt=""></div> example@fylo.com</li>
+          </ul>
+          <ul class="contact">
+            <li>About Us</li>
+            <li>Jobs</li>
+            <li>Press</li>
+            <li>Blog</li>
+          </ul>
+          <ul class="contact">
+            <li>Contact Us</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+
+          <ul class="icon-wrapper flex">
+            <li class="icons flex"><i class=" fa-brands fa-facebook-f"></i></li>
+            <li class="icons flex"><i class=" fa-brands fa-twitter"></i></li>
+            <li class="icons flex"><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+            
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
